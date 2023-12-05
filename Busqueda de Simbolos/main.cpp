@@ -7,21 +7,17 @@
 using namespace std;
 
 class Environment {
-        private:
-        // Un solo map para variables y cualquier información adicional
+        private: // Atributos privados
         map<string, int> symbolTable;
 
-        public:
-        // Método para insertar un nuevo símbolo al entorno sin conflictos
+        public: // Atributos públicos
         void insert(const string& name, int value) {
             auto it = symbolTable.find(name);
-            if (it == symbolTable.end()) {
-                // El símbolo no existe, se puede insertar
+            if (it == symbolTable.end()) { // El símbolo no existe en el entorno
                 symbolTable[name] = value;
-                cout << "Símbolo '" << name << "' insertado exitosamente." << endl;
+                cout << "Simbolo '" << name << "' insertado exitosamente." << endl;
             } else {
-                // El símbolo ya existe, muestra un mensaje de error
-                cerr << "Error: Símbolo '" << name << "' ya existe en el entorno." << endl;
+                cerr << "Error: Simbolo '" << name << "' ya existe en el entorno." << endl;
             }
         }
 
@@ -67,3 +63,27 @@ class Environment {
             }
         }
 };
+
+int main() {
+    Environment env;
+
+    env.insert("x", 10);
+
+    int x = env.getVariable("x");
+    if (env.lookup("x", x)) {
+        cout << "El valor de x: " << x << endl;
+    }
+    else {
+        cout << "No se encontró el valor de x" << endl;
+    }
+
+    env.addMetadata("y", 20);
+
+    int y = env.getMetadata("y");
+    if (env.lookup("y", y)) {
+        cout << "El valor de y: " << y << endl;
+    }
+    else {
+        cout << "No se encontró el valor de y" << endl;
+    }
+}
