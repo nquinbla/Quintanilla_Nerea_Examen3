@@ -41,5 +41,32 @@ private:
 };
 
 int main() {
-    
+    try {
+        Enviroment env;
+
+        env.insert("x", 10);
+        env.insert("mensaje", "tarta de queso");
+
+        auto xValue = get<int>(env.lookup("x"));
+        cout << "El valor de x: " << xValue << endl;
+
+        auto mensajeValue = get<string>(env.lookup("mensaje"));
+        cout << "El valor de mensaje: " << mensajeValue << endl;
+
+        auto yValue = get<int>(env.lookup("y"));
+        env.remove("x");
+
+        if (env.exists("x")) {
+            cout << "El valor de x existe: " << get<int>(env.lookup("x")) << endl;
+        } else {
+            cout << "El valor de x no existe." << endl;
+        }
+        catch (const exception& e) {
+            cerr << "Error: " << e.what() << endl;
+        }
+        catch (...) {
+            cerr << "Error desconocido." << endl;
+        }
+    }
+    return 0;
 }
