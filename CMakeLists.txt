@@ -3,4 +3,4 @@ project(Quintanilla_Nerea_Examen3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Quintanilla_Nerea_Examen3 main.cpp)
+add_executable(Enviroment Enviroment.cpp Enviroment.h)
