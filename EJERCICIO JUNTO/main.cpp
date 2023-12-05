@@ -7,7 +7,7 @@ using namespace std;
 
 class Enviroment {
 private:
-    map<string, variant<int, double, string>> variables;
+    map<string, variant <int, double, string>> variables;
 
     public:
     void insert(const string& name, const variant<int, string>& value) {
@@ -67,6 +67,6 @@ int main() {
         catch (...) {
             cerr << "Error desconocido." << endl;
         }
-    }
-    return 0;
+
+        return 0;
 }
