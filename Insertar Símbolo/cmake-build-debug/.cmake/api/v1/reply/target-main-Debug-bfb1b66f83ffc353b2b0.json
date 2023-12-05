@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "simbolo.exe"
+			"path" : "main.exe"
 		},
 		{
-			"path" : "simbolo.pdb"
+			"path" : "main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "simbolo::@6890427a1f51a3e7e1df",
+	"id" : "main::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "simbolo",
-	"nameOnDisk" : "simbolo.exe",
+	"name" : "main",
+	"nameOnDisk" : "main.exe",
 	"paths" : 
 	{
 		"build" : ".",

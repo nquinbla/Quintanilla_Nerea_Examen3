@@ -3,4 +3,4 @@ project(Insertar_S�mbolo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(simbolo main.cpp)
+add_executable(main main.cpp)
