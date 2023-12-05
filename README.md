@@ -7,16 +7,24 @@ La resolución de la "PARTE 1" está señalada en el mismo read.me, sin embargo 
 
 ## [PARTE 1] PREGUNTAS DE ELECCIÓN MÚLTIPLE (20%)
  1. ¿Cuál es el propósito principal de la clase Variant en el lenguaje Tiny Lisp?
+    
       b). Representar cualquier tipo de dato Lisp. Ya que permite una mayor flexibilidad en la manipulación de datos en el programa.
+
     
  2. ¿Qué representación se obtiene al utilizar el método to_string() en un objeto Variant?
+
       a). Una cadena de texto que representa una instancia de Variant, incluida la representación de los datos contenidos en el objeto.
+
     
  3. ¿Qué función cumple el método to_json_string() en la clase Variant?
+  
       b). Convierte un objeto Variant a una cadena JSON, recorriendo antes los datos contenidos en el objeto Variant.
+
     
  4. ¿Qué función cumple el método from_json_string() en la clase Variant?
+  
       a). Convierte una cadena JSON en un objeto Variant.
+
 
 
 ## [PARTE 2] PREGUNTAS DE DESARROLLO DE CÓDIGO (80%): Sistema de Scripting para motor de Videojuegos Indie
