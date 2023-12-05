@@ -61,12 +61,10 @@ int main() {
         } else {
             cout << "El valor de x no existe." << endl;
         }
-        catch (const exception& e) {
-            cerr << "Error: " << e.what() << endl;
-        }
-        catch (...) {
-            cerr << "Error desconocido." << endl;
-        }
+    }
+    catch (const exception& e) {
+        cerr << "Error: " << e.what() << endl;
+    }
 
         return 0;
 }
