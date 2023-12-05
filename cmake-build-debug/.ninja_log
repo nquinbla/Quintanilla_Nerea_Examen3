@@ -1,2 +1,6 @@
 # ninja log v5
 3	575	7234741451142377	CMakeFiles/Enviroment.dir/Enviroment.cpp.obj	a8db2ef9b1193df1
+1	697	7234746249231810	CMakeFiles/pruebas.dir/prueba.cpp.obj	ddd4592c08c9fb6
+697	825	7234746250484423	pruebas.exe	7d6da4f8737f6204
+6	607	7234747122635206	CMakeFiles/pruebas.dir/prueba.cpp.obj	ddd4592c08c9fb6
+608	738	7234747123920343	pruebas.exe	7d6da4f8737f6204

@@ -73,6 +73,39 @@ build Enviroment.exe: CXX_EXECUTABLE_LINKER__Enviroment_Debug CMakeFiles/Envirom
   TARGET_IMPLIB = libEnviroment.dll.a
   TARGET_PDB = Enviroment.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pruebas
+
+
+#############################################
+# Order-only phony target for pruebas
+
+build cmake_object_order_depends_target_pruebas: phony || CMakeFiles/pruebas.dir
+
+build CMakeFiles/pruebas.dir/prueba.cpp.obj: CXX_COMPILER__pruebas_unscanned_Debug C$:/Users/nerea/OneDrive/Documentos/GitHub/Quintanilla_Nerea_Examen3/prueba.cpp || cmake_object_order_depends_target_pruebas
+  DEP_FILE = CMakeFiles\pruebas.dir\prueba.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\pruebas.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pruebas
+
+
+#############################################
+# Link the executable pruebas.exe
+
+build pruebas.exe: CXX_EXECUTABLE_LINKER__pruebas_Debug CMakeFiles/pruebas.dir/prueba.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pruebas.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pruebas.exe
+  TARGET_IMPLIB = libpruebas.dll.a
+  TARGET_PDB = pruebas.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Enviroment: phony Enviroment.exe
 
+build pruebas: phony pruebas.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build Enviroment: phony Enviroment.exe
 #############################################
 # Folder: C:/Users/nerea/OneDrive/Documentos/GitHub/Quintanilla_Nerea_Examen3/cmake-build-debug
 
-build all: phony Enviroment.exe
+build all: phony Enviroment.exe pruebas.exe
 
 # =============================================================================
 # Built-in targets
