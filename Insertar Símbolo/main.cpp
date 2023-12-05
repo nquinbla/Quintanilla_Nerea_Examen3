@@ -20,3 +20,8 @@ Enviroment::Enviroment() {}
 void Enviroment::set(const string &symbol, int value) {
     variables[symbol] = value;
 }
+
+int Enviroment::get(const string &symbol) const {
+    return variables.at(symbol);
+}
+
