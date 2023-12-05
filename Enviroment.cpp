@@ -1,27 +1,22 @@
 // Comenzamos definiendo la estructura básica de la clase Environment, asegurandonos que esta integra un std::map para la tabla de símbolos.
 
-#include "Enviroment.h"
 
-int Enviroment::get(const string &symbol) const {
-    auto it = symbols.find(symbol);
-    if (it == symbols.end()) {
-        return 0;
+#include <iostream>
+#include <string>
+#include <map>
+
+using namespace std;
+
+class Environment { // clase Environment
+    private:
+        map<string, int> symbols; // tabla de símbolos
+        map<string, string> types; // tabla de tipos
+    public:
+    void addVariable(string name, int value, string type) { // función para añadir variables
+        symbols[name] = value; // añadimos el valor a la tabla de símbolos
+        types[name] = type; // añadimos el tipo a la tabla de tipos
     }
-    return it->second;
-}
-
-void Enviroment::set(const string &symbol, const string &value) {
-    symbols[symbol] = stoi(value);
-}
-
-Enviroment::Enviroment() {
-    symbols["pi"] = 3;
-    symbols["e"] = 2;
-    symbols["phi"] = 1;
-}
-
-
-
-
-
-
+    int getVariable(string name) { // función para obtener variables
+        return symbols[name]; // devolvemos el valor de la variable
+    }
+};
