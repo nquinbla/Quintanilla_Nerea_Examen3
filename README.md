@@ -1,6 +1,8 @@
 # Quintanilla_Nerea_Examen3
 Examen de Nerea Quintanilla Blanco, Tema 3.
+
 https://github.com/nquinbla/Quintanilla_Nerea_Examen3.git
+
 La resolución de la "PARTE 1" está señalada en el mismo read.me, sin embargo la "PARTE 2" se encuentra en las diferentes carpetas. Cada parte del ejercicio esta explicado en el mismo read.me
 
 ## [PARTE 1] PREGUNTAS DE ELECCIÓN MÚLTIPLE (20%)
