@@ -5,6 +5,11 @@ https://github.com/nquinbla/Quintanilla_Nerea_Examen3.git
 
 La resolución de la "PARTE 1" está señalada en el mismo read.me, sin embargo la "PARTE 2" se encuentra en las diferentes carpetas. Cada parte del ejercicio esta explicado en el mismo read.me
 
+#### [PROGRAMAS USADOS EXTERNOS]
+- GitHub Copilot (comentarios)
+- UAX Campus, Programación (teoría)
+- ChatGPT (corrección de errores)
+
 ## [PARTE 1] PREGUNTAS DE ELECCIÓN MÚLTIPLE (20%)
  1. ¿Cuál es el propósito principal de la clase Variant en el lenguaje Tiny Lisp?
     
