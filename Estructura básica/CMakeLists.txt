@@ -3,5 +3,4 @@ project(Estructura_b�sica)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main  Enviroment.cpp)
-add_executable(prueba  prueba.cpp)
+add_executable(main  Enviroment.cpp Enviroment.h)
