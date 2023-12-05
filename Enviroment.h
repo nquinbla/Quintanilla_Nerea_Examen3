@@ -1,7 +1,5 @@
 // Comenzamos definiendo la estructura básica de la clase Environment, asegurandonos que esta integra un std::map para la tabla de símbolos.
 
-
-
 #ifndef QUINTANILLA_NEREA_EXAMEN3_ENVIROMENT_H
 #define QUINTANILLA_NEREA_EXAMEN3_ENVIROMENT_H
 
